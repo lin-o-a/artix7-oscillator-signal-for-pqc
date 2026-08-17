@@ -75,6 +75,6 @@ Define the ~65 MHz (15.385 ns period) internal clock target for STA
 ├── hdl/
 │   └── top.v               # Top-level Verilog file with STARTUPE2 and BUFG
 └── docs/
-    ├── unconstrained.png   # Device view showing cost-driven placement
-    ├── constrained.png     # Device view showing timing-driven placement
+    ├── UnconstrainedInternalClockDesign.png   # Device view showing cost-driven placement
+    ├── ConstrainedInternalClockDesign.png     # Device view showing timing-driven placement
     └── other 

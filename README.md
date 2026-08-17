@@ -61,8 +61,14 @@ BUFG bufg_inst (
     .I(raw_cfgmclk),
     .O(internal_clk)
 );
+```
+
+### 2. Constraints Specification (constraints/pins.xdc)
+Define the ~65 MHz (15.385 ns period) internal clock target for STA
+```create_clock -period 15.385 -name internal_clk [get_pins startup_inst/CFGMCLK]```
 
 # Repository Structure
+```text
 ├── README.md               # Project documentation and summary
 ├── constraints/
 │   └── pins.xdc            # XDC timing constraints and physical I/O properties
